@@ -1,0 +1,430 @@
+body{ 
+    background-image: url(img/Skype_Picture-1100x500.png); 
+    margin: 0; 
+    min-height: 100vh; 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    font-family: Arial, sans-serif; 
+} 
+
+html {
+    scroll-behavior: smooth;
+}
+
+.overlay{ 
+    width: 100%; 
+    height: 100vh; 
+    background: rgba(0,0,0,0.35); 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    color: white; 
+} 
+
+h1{ 
+    font-size: 70px; 
+    font-style: italic; 
+    letter-spacing: 4px; 
+    margin: 0; 
+} 
+
+p{ 
+    margin-top: 20px; 
+    font-size: 20px; 
+    width: 60%; 
+} 
+
+nav{ 
+    margin-top: 25px; 
+    display: flex; 
+    gap: 25px; 
+} 
+
+nav a{ 
+    color: white; 
+    text-decoration: none; 
+    font-size: 20px; 
+    font-weight: bold; 
+    transition: 0.3s; 
+} 
+
+nav a:hover{ 
+    color: pink; 
+}
+
+.redes {
+    margin-top: 18px;
+    display: flex;
+    gap: 15px;
+}
+
+.redes a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    transition: 0.3s;
+}
+
+.redes a:hover {
+    color: pink;
+}
+
+section {
+    min-height: 100vh;
+    padding: 60px 10%;
+    text-align: center;
+    background: white;
+    color: black;
+}
+
+section h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+section p {
+    width: 80%;
+    margin: 20px auto;
+    font-size: 17px;
+    color: #5c2f2f;
+    text-align: justify;
+}
+
+.imagen-blog {
+    width: 75%;
+    max-width: 800px;
+    height: 320px;
+    object-fit: cover;
+    filter: grayscale(100%);
+}
+
+.contenido-blog {
+    width: 80%;
+    margin: 25px auto;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.contenido-blog img {
+    width: 150px;
+}
+
+.contenido-blog p {
+    width: auto;
+    margin: 0;
+}
+.galeria {
+    width: 85%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px 25px;
+}
+
+.galeria div {
+    text-align: center;
+}
+
+.galeria img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    filter: grayscale(80%);
+    box-shadow: 4px 4px 6px rgba(0,0,0,0.4);
+}
+.galeria p {
+    width: 100%;
+    margin-top: 12px;
+    text-align: center;
+    font-size: 16px;
+    font-style: italic;
+    color: #5c2f2f;
+}
+
+.videos {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.videos div {
+    margin-bottom: 35px;
+}
+
+video {
+    width: 80%;
+    max-width: 750px;
+    box-shadow: 4px 4px 6px rgba(0,0,0,0.4);
+}
+
+.videos p {
+    width: 80%;
+    margin: 12px auto 0;
+    text-align: center;
+    font-size: 16px;
+    color: #5c2f2f;
+}
+
+.texto-redes {
+    width: 100%;
+    margin-top: 35px;
+    text-align: left;
+    color: #5c2f2f;
+    font-size: 17px;
+}
+
+.redes-seccion {
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.redes-seccion a {
+    width: 35px;
+    height: 35px;
+    background: black;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.redes-seccion a:hover {
+    background: pink;
+    color: black;
+}
+
+
+button {
+    margin-top: 30px;
+    padding: 12px 25px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: pink;
+    color: black;
+}
+.encabezado-seccion {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.encabezado-seccion h1 {
+    color: black;
+    font-size: 65px;
+    font-family: Georgia, serif;
+    font-style: italic;
+    margin-bottom: 25px;
+}
+
+.encabezado-seccion nav {
+    justify-content: center;
+    margin-top: 0;
+}
+
+.encabezado-seccion nav a {
+    color: blue;
+    font-size: 16px;
+}
+
+.encabezado-seccion nav a:hover {
+    color: pink;
+    border-bottom: 2px solid pink;
+}
+.video-responsive {
+    width: 80%;
+    max-width: 750px;
+    margin: 0 auto 35px;
+}
+
+.video-responsive iframe {
+    width: 100%;
+    height: 420px;
+    border: none;
+    box-shadow: 4px 4px 6px rgba(0,0,0,0.4);
+}
+.titulo-nosotros{
+    background: navy;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.pagina-nosotros{
+    background: white;
+    min-height: 100vh;
+}
+
+.contenedor-nosotros{
+    width: 85%;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+
+    display: grid;
+
+    grid-template-areas:
+    "texto principal"
+    "imagen1 principal";
+
+    grid-template-columns: 2fr 1fr;
+
+    gap: 30px;
+}
+
+.texto{
+    grid-area: texto;
+}
+
+.texto p{
+    column-count: 2;
+    column-gap: 40px;
+    text-align: justify;
+}
+
+.imagen-principal{
+    grid-area: principal;
+}
+
+.imagen1{
+    grid-area: imagen1;
+}
+
+.imagen2{
+    display: none;
+}
+
+.imagen-principal img{
+    width: 100%;
+    max-width: 350px;
+    height: 500px;
+    object-fit: cover;
+    box-shadow: 4px 4px 6px rgba(0,0,0,0.4);
+}
+
+.imagen1 img{
+    width: 100%;
+    max-width: 500px;
+    height: 220px;
+    object-fit: cover;
+    box-shadow: 4px 4px 6px rgba(0,0,0,0.4);
+}
+
+.pie{
+    background: navy;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+.pagina-contactos{
+    min-height: 100vh;
+    background: linear-gradient(to right, #fff0f5, #ffe4e1);
+}
+
+.titulo-contactos{
+    background: navy;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.contenedor-contactos{
+    width: 85%;
+    margin: 40px auto;
+
+    display: grid;
+
+    grid-template-areas:
+    "tabla formulario";
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 40px;
+}
+
+.tabla-contacto{
+    grid-area: tabla;
+}
+
+.formulario-contacto{
+    grid-area: formulario;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th{
+    background: navy;
+    color: white;
+    padding: 12px;
+}
+
+td{
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+}
+
+.formulario-contacto form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: white;
+    padding: 25px;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea{
+    padding: 10px;
+    font-size: 16px;
+}
+
+.formulario-contacto button{
+    width: 150px;
+}
+
+.mapa{
+    width: 85%;
+    margin: 40px auto;
+}
+
+.mapa iframe{
+    box-shadow: 4px 4px 6px rgba(0,0,0,0.4);
+}
+.redes-seccion{
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.redes-seccion a{
+    width: 45px;
+    height: 45px;
+    background: navy;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.redes-seccion a:hover{
+    background: pink;
+    color: black;
+}
