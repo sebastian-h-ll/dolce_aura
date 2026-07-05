@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promociones | Dolce Aura</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="overlay" id="inicio">
+
+        <h1>Promociones Dolce Aura</h1>
+
+        <p>
+            ¡No dejes pasar nuestras promociones!
+            Disfruta de descuentos exclusivos, combos especiales y ofertas por tiempo limitado.
+            Cada visita a Dolce Aura puede ser más dulce y económica.
+        </p>
+
+        <nav>
+            <a href="index.html">INICIO</a>
+            <a href="nosotros.html">NOSOTROS</a>
+            <a href="blog.html">BLOG</a>
+            <a href="galeria.html">GALERIA</a>
+            <a href="videos.html">VIDEOS</a>
+            <a href="promociones.html">PROMOCIONES</a>
+            <a href="contactos.html">CONTACTOS</a>
+        </nav>
+        <div class="contenedor-promociones">
+
+    <div class="promo">
+        <h2>🍩 Martes 2x1</h2>
+        <p>Lleva dos donas clásicas y paga solo una.</p>
+        <button onclick="cupon()">Reclamar Cupón</button>
+    </div>
+
+    <div class="promo">
+        <h2>🥤 Combo Dulce</h2>
+        <p>6 donas + 2 bebidas por S/39.90.</p>
+        <button onclick="cupon()">Reclamar Cupón</button>
+    </div>
+
+    <div class="promo">
+        <h2>🎉 Descuento 15%</h2>
+        <p>Obtén un 15% de descuento en tu próxima compra.</p>
+        <button onclick="cupon()">Reclamar Cupón</button>
+    </div>
+
+</div>
+
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+
+    </div>
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+     function cupon() {
+      Swal.fire({
+        title: '🎉 ¡Cupón obtenido!',
+        text: 'Presenta este cupón y recibe un 15% de descuento en tu próxima compra.',
+        icon: 'success',
+        confirmButtonText: 'Aceptar'
+      });
+     }
+</script>
+</body>
